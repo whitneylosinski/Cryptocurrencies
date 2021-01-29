@@ -45,6 +45,7 @@ The project was broken down into the four steps mentioned above.  The first step
   x_scaled = StandardScaler().fit_transform(x.values)
 ```
 Below is what the first few columns of the preprocessed dataframe looked like before scaling.  There are a total of 98 columns.
+
 ![Preprocessed_data](Results/Preprocessed_data.png)
 
 The next step in the project was to reduce the data dimensions using PCA.  After preprocessing the data, there were 98 different columns in the dataset that could have possibly each been their own dimension.  However, using PCA, the data was reduced to only 3 principal components to represent the data as a smaller set of variables in order to more easily observe any clusters.  The following code was used to reduce the dimensions.
@@ -58,6 +59,7 @@ The next step in the project was to reduce the data dimensions using PCA.  After
 ```
 
 Below is what the dataframe looks like after reducing the dimensions.
+
 ![Reduced_data](Results/Reduced_data.png)
 
 The third step in the project was to cluster the cryptocurrencies using the K-means algorithm.  This was completed by first creating an elbow curve and determining the ideal number of clusters (which turned out to be 4 for this model), and then initializing the K-means model, fitting the model to the data and using the model to predicting the clusters.  The results of the model were then added to a new dataframe along with the reduced dimensions and some of the original data.  The following code was used to cluster the data.
@@ -109,6 +111,7 @@ clustered_df.head(10)
 ![Clustered_data](Results/Clustered_data.png)
 
 The final step of the project was to create visualizations of the cryptocurrencies results.  First the PCA data was plotted on a 3D scatter plot as shown below.
+
 ![3d_scatter_plot](Results/3d_scatter_plot.png)
 
 Next, the data was 
