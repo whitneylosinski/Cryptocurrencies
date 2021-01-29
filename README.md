@@ -10,8 +10,8 @@ The purpose of this project was to create a report that includes what cryptocurr
 Data: crypto_data.csv </br>
 Software: Python 3.7.9, Pandas 1.1.3, Plotly 4.14.3, hvplot 0.7.0, SciKit-Learn 0.23.2 </br>
 
-### Results
-The project was broken down into the four steps mentioned above.  The first step was to preprocess the data for PCA.  This included looking at the original dataset, determining which data needed to be included in the analysis, removing rows with null values, using get_dummies to create numerical values for string data and scaling the data.  The following code was used after importing all dependencies.
+### Summary
+The project was broken down into the four steps mentioned above.  The first step was to preprocess the data for PCA.  This included looking at the original dataset, determining which data needed to be included in the analysis, removing rows with null values, using get_dummies to create numerical values for string data and using StandardScaler() to scale the data.  The following code was used after importing all dependencies.
 
 ```py
   # Load the crypto_data.csv dataset.
@@ -114,7 +114,6 @@ The final step of the project was to create visualizations of the cryptocurrenci
 
 ![3d_scatter_plot](Results/3d_scatter_plot.png)
 
-Next, the data was 
+Next, the data from the TotalCoinSupply and TotalCoinsMined columns was scaled using the MinMaxScaler() and hvplot was used to create a scatter plot of the total coins mined versus the total coin supply for all of the tradable cryptocurrencies, identified by Class (from the K-means clusters).  The resulting chart is below.
 
-
-
+![hvplot](Results/hvplot.png)
