@@ -117,3 +117,10 @@ The final step of the project was to create visualizations of the cryptocurrenci
 Next, the data from the TotalCoinSupply and TotalCoinsMined columns was scaled using the MinMaxScaler() and hvplot was used to create a scatter plot of the total coins mined versus the total coin supply for all of the tradable cryptocurrencies, identified by Class (from the K-means clusters).  The resulting chart is below.
 
 ![hvplot](Results/hvplot.png)
+
+<hr></hr>
+
+
+**Contact:** </br>
+email: whitney.losinski@gmail.com</br>
+linkedin: https://www.linkedin.com/in/whitneylosinski/
